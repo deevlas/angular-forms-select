@@ -1,0 +1,8 @@
+<div>
+  <ul>
+    <li *ngFor="let p of userPosts">
+      <a [routerLink]="['posts', p.id]" [state]="{post: p}">{{p.id}}. {{p.title}}</a>
+      <hr>
+    </li>
+  </ul>
+</div>

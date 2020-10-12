@@ -1,0 +1,12 @@
+<!-- <input [(ngModel)]="username" #user = 'ngModel'>-->
+<select [(ngModel)] = "myModel" #ssss = ngModel>
+  <option *ngFor="let u of users" value="{{u | json}}">{{u.id}} {{u.name}}</option>
+</select>
+ <button (click)="checkInputState(ssss)">Find</button>
+
+
+<!--  <select id="name">-->
+<!--    <option value="user1" selected>1</option>-->
+<!--    <option value="user2">2</option>-->
+<!--    <option value="user3">3</option>-->
+<!--  </select>-->
